@@ -1,5 +1,30 @@
+import AppearingBox from "../boxes/AppearingBox";
+
 export default function Projects() {
-    return <p className="description">
-        projects
-    </p>
+    return <div>
+        <AppearingBox>
+            projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects         projects projects projects projects projects projects projects projects projects projects projects projects projects pr
+        </AppearingBox>
+        <AppearingBox>
+            projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects         projects projects projects projects projects projects projects projects projects projects projects projects projects pr
+        </AppearingBox>
+        <AppearingBox>
+            projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects         projects projects projects projects projects projects projects projects projects projects projects projects projects pr
+        </AppearingBox>
+        <AppearingBox>
+            projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects         projects projects projects projects projects projects projects projects projects projects projects projects projects pr
+        </AppearingBox>
+        <AppearingBox>
+            projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects         projects projects projects projects projects projects projects projects projects projects projects projects projects pr
+        </AppearingBox>
+        <AppearingBox>
+            projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects         projects projects projects projects projects projects projects projects projects projects projects projects projects pr
+        </AppearingBox>
+        <AppearingBox>
+            projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects         projects projects projects projects projects projects projects projects projects projects projects projects projects pr
+        </AppearingBox>
+        <AppearingBox>
+            projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects projects         projects projects projects projects projects projects projects projects projects projects projects projects projects pr
+        </AppearingBox>
+    </div>
 }

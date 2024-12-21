@@ -1,0 +1,58 @@
+.parentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+  
+.container {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    align-items: center;
+    justify-items: center;
+    border: 1px solid white;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.image {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.description {
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+}
+  
+@media (max-width: 768px) {
+    .parentContainer, .container {
+        margin: 0 auto;
+        max-width: 100%; 
+    }
+    .parentContainer {
+        padding: 10px;
+    }
+  
+    .description {
+        width: 100%;
+        font-size: 12px;
+    }
+}
+  
+@media (max-width: 1024px) {
+    .parentContainer {
+        padding: 0 20px;
+    }
+  
+    .description {
+        width: 80%;
+    }
+}
+  

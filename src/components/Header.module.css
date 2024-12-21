@@ -1,0 +1,19 @@
+.container {
+    border-bottom: 1px solid white;
+    background-color: #0a0a0a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 5px;
+}
+
+.buttonContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.buttonContainer button {
+    margin: 0 auto;
+    text-align: center;
+}
