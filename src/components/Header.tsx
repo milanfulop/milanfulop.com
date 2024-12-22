@@ -49,7 +49,7 @@ export default function Header() {
     return (
         <div className={styles.container}>
             <h1 className="title">Milan Fulop</h1>
-            <p className="description">web developer & designer</p>
+            <p className="description">software developer</p>
             <br />
             <nav className={styles.buttonContainer}>
                 <button
