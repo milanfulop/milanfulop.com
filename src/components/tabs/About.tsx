@@ -13,11 +13,11 @@ export default function About() {
                 </p>
             </CustomBox>
 
-            <CustomBox marginTop="100px" marginBottom="100px">
+            <CustomBox marginTop="50px" marginBottom="100px">
                 <ImageBox imageUrl="/childhood-photo.png" description="This kid used to be me. Hi!" alt="Childhood photo of me" loadingType="eager"/>
             </CustomBox>
 
-            <AppearingBox  marginBottom="150px">
+            <AppearingBox>
                 <p className="description">
                     Over the past few years, I've been exploring how ideas actually turn into reality. I used to run a blog pointing out ui/ux mistakes made by technical founders, while offering actionable solutions in a digestible way. Although the blog was short-lived, it managed to inspire people to fix issues I highlighted.
                     <br /><br />
@@ -25,13 +25,13 @@ export default function About() {
                 </p>
             </AppearingBox>
 
-            <AppearingBox marginTop="100px" marginBottom="100px">
+            <AppearingBox marginTop="50px" marginBottom="100px">
                 <ImageBox width={700} imageUrl="/helped-somebody.png" description="One of the founders I've inspired. :)" alt="A founder I've inspired" loadingType="lazy"/>
             </AppearingBox>
 
             <AppearingBox marginBottom="25px">
                 <p className="description">
-                    I believe that every key I've pressed, every word I've written, every mistake I've made, and every wave of uncertainty I've faced will ultimately shape me into the person my subconscious self wants me to become.
+                    I believe that every key I've pressed, every word I've written, every mistake I've made, and every wave of uncertainty I've faced will ultimately shape me into the person my subconscious self truly wants to become.
                 </p>
             </AppearingBox>
 

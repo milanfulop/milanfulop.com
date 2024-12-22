@@ -15,9 +15,10 @@ export default function ImageBox({ imageUrl, alt, description, width = 350, heig
     <div className={styles.parentContainer}>
       <div 
         className={styles.container} 
-        style={{ width: width, height: height }}
+        style={{ width: width, maxHeight: height }}
       >
-        <Image 
+        <Image
+            quality={50} 
             loading={loadingType} 
             width={width} 
             height={height} 
