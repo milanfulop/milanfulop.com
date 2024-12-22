@@ -19,7 +19,17 @@ span {
 
 .title {
   font-family: "Inter", serif;
-  font-size: 28px;
+  font-size: 32px;
+}
+
+.subtitle {
+  font-family: "Inter", serif;
+  font-size: 21px;
+}
+
+a {
+  text-decoration: dotted underline;
+  color: white;
 }
 
 .description {
@@ -27,19 +37,10 @@ span {
   color: #c5c5c5;
 }
 
-.description a {
-  color: #007acc;
-}
-
 .links p {
   margin: 5px 0;
 }
 
-.links a {
-  text-decoration: none;
-  color: #007acc;
-}
-
-.links a:hover {
-  text-decoration: underline;
+.new-section {
+  padding-top: 125px;
 }

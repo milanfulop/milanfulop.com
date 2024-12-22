@@ -26,16 +26,16 @@ export default function About() {
             </AppearingBox>
 
             <AppearingBox marginTop="100px" marginBottom="100px">
-                <ImageBox width={700} imageUrl="/helped-somebody.png" description="One of the founders I've inspired." alt="Childhood photo of me" loadingType="lazy"/>
+                <ImageBox width={700} imageUrl="/helped-somebody.png" description="One of the founders I've inspired. :)" alt="A founder I've inspired" loadingType="lazy"/>
             </AppearingBox>
 
-            <AppearingBox marginBottom="150px">
+            <AppearingBox marginBottom="25px">
                 <p className="description">
                     I believe that every key I've pressed, every word I've written, every mistake I've made, and every wave of uncertainty I've faced will ultimately shape me into the person my subconscious self wants me to become.
                 </p>
             </AppearingBox>
 
-            <AppearingBox marginBottom="150px">
+            <AppearingBox>
                 <p className="description">
                     Into someone that's truly authentic to me.
                 </p>
