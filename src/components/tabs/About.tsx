@@ -4,7 +4,7 @@ import ImageBox from "../boxes/ImageBox";
 
 export default function About() {
     return (
-        <div>
+        <div id="about">
             <CustomBox>
                 <p className="description">
                     7 years ago, my brother Martin introduced me to programming. Since then, I've participated in national competitions, workshops, team projects, while learning (and failing) a lot. Programming has immensely influenced the way I approached real-life problems as I've grown up. 

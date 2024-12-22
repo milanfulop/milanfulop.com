@@ -4,7 +4,7 @@
     position: sticky;
     top: 0;
     z-index: 1000;
-    padding: 5px;
+    padding-top: 5px;
 }
 
 .buttonContainer {
@@ -14,6 +14,15 @@
 }
 
 .buttonContainer button {
-    margin: 0 auto;
+    flex: 1;
+    margin: 0;
     text-align: center;
+    transition: background 0.3s ease;
+    border: none;
+    padding: 10px 0;
+    color: white;
+    background: transparent;
+    font-size: 1rem;
+    cursor: pointer;
 }
+
