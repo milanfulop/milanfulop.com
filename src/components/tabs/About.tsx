@@ -7,7 +7,7 @@ export default function About() {
         <div id="about">
             <CustomBox>
                 <p className="description">
-                    7 years ago, my brother Martin introduced me to programming. Since then, I've participated in national competitions, workshops, team projects, while learning (and failing) a lot. Programming has immensely influenced the way I approached real-life problems as I've grown up. 
+                    7 years ago, my brother Martin introduced me to programming. Since then, I've participated in national competitions, workshops, team projects, while learning (and failing) a lot. Programming has immensely shaped the way I approached real-life problems as I've grown up. 
                     <br /><br />
                     I'm 17 now, and I can confidently say computers have changed my life for the better. It not only has given me the tools to build software, but to build my future: the <span>love</span>, experiences, and discoveries that await.
                 </p>
