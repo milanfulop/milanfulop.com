@@ -2,7 +2,6 @@
 
 import * as motion from "motion/react-client"
 import type { Variants } from "motion/react"
-import React, { useEffect, useState, useRef } from 'react';
 
 interface AppearingBoxProps {
     children: React.ReactNode;
