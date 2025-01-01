@@ -1,5 +1,7 @@
 "use client"
 
+import * as motion from "motion/react-client"
+import type { Variants } from "motion/react"
 import React, { useEffect, useState, useRef } from 'react';
 
 interface AppearingBoxProps {
@@ -9,42 +11,34 @@ interface AppearingBoxProps {
 }
 
 export default function AppearingBox({ children, marginBottom = '20px', marginTop = '20px' }: AppearingBoxProps) {
-    const [isVisible, setIsVisible] = useState(false);
-    const boxRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                if (entry.isIntersecting) {
-                    setIsVisible(true);
-                }
-            },
-            { threshold: 0.1 }
-        );
-
-        if (boxRef.current) {
-            observer.observe(boxRef.current);
-        }
-
-        return () => {
-            if (boxRef.current) {
-                observer.unobserve(boxRef.current);
-            }
-        };
-    }, []);
-
     return (
-        <div
-            ref={boxRef}
+        <motion.div
+            viewport={{amount: 0.8, once: true}}
+            initial="hidden"
+            whileInView="visible"
+            variants={cardVariants}
             style={{
-                opacity: isVisible ? 1 : 0,
-                transform: isVisible ? 'translateY(0)' : 'translateY(50px)',
-                transition: 'opacity 0.5s, transform 0.5s',
                 marginTop: marginTop,
                 marginBottom: marginBottom,
             }}
         >
             {children}
-        </div>
+        </motion.div>
     );
+}
+
+const cardVariants: Variants = {
+    hidden: {
+        y: 0,
+        opacity: 0,
+    },
+    visible: {
+        y: -20,
+        opacity: 1,
+        transition: {
+            type: "spring",
+            bounce: 0.5,
+            duration: 0.6,
+        },
+    },
 }
