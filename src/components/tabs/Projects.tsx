@@ -14,7 +14,7 @@ export default function Projects() {
             <p className="description mb-6">The price of learning was apathy. While already standing on the edge of a burn out, this project was the cherry on the cake. Still, I haven't managed to fully recover from that, which is why I'm trying to find something new and exciting nowadays, to feel that spark I felt when I started programming.</p>
         </AppearingBox>
         <AppearingBox marginTop="50px" marginBottom="100px">
-            <ImageBox imageUrl="/recreate-design.png" description="I lowkey miss writing for recreate.design." alt="The logo of recreate.design" height={250}/>
+            <ImageBox imageUrl="/recreate-design.webp" description="I lowkey miss writing for recreate.design." alt="The logo of recreate.design" height={250}/>
         </AppearingBox>
         <AppearingBox marginBottom="100px">
             <h3 className='subtitle'><a target="_blank" rel="noopener noreferrer"href="https://github.com/milanfulop/explainer">Explainer</a></h3>

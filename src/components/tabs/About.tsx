@@ -14,7 +14,7 @@ export default function About() {
             </CustomBox>
 
             <CustomBox marginTop="50px" marginBottom="100px">
-                <ImageBox imageUrl="/childhood-photo.png" description="This kid used to be me. Hi!" alt="Childhood photo of me" loadingType="eager"/>
+                <ImageBox imageUrl="/childhood-photo.webp" description="This kid used to be me. Hi!" alt="Childhood photo of me" loadingType="eager"/>
             </CustomBox>
 
             <AppearingBox>
@@ -26,7 +26,7 @@ export default function About() {
             </AppearingBox>
 
             <AppearingBox marginTop="50px" marginBottom="100px">
-                <ImageBox width={700} imageUrl="/helped-somebody.png" description="One of the founders I've inspired. :)" alt="A founder I've inspired" loadingType="lazy"/>
+                <ImageBox width={700} imageUrl="/helped-somebody.webp" description="One of the founders I've inspired. :)" alt="A founder I've inspired" loadingType="lazy"/>
             </AppearingBox>
 
             <AppearingBox marginBottom="25px">
