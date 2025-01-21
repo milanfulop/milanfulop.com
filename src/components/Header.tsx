@@ -48,8 +48,8 @@ export default function Header() {
 
     return (
         <div className={styles.container}>
-            <h1 className="title">Milan Fulop</h1>
-            <p className="description">software developer</p>
+            <h3 className="title">Milan Fulop</h3>
+            <h1 className="description">web developer student</h1>
             <br />
             <nav className={styles.buttonContainer}>
                 <button
