@@ -7,26 +7,26 @@ export default function About() {
         <div id="about">
             <CustomBox>
                 <p className="description">
-                    7 years ago, my brother Martin introduced me to programming. Since then, I've participated in national competitions, workshops, team projects, while learning (and failing) a lot. Programming has immensely shaped the way I approached real-life problems as I've grown up. 
+                    7 years ago, my brother Martin introduced me to web development. Since then, I've participated in national competitions, workshops, team projects, while learning (and failing) a lot. Developing softwares and solving problems has immensely shaped the way I approached real-life problems as I've grown up. 
                     <br /><br />
                     I'm 17 now, and I can confidently say computers have changed my life for the better. It not only has given me the tools to build software, but to build my future: the <span>love</span>, experiences, and discoveries that await.
                 </p>
             </CustomBox>
 
             <CustomBox marginTop="50px" marginBottom="100px">
-                <ImageBox imageUrl="/childhood-photo.png" description="This kid used to be me. Hi!" alt="Childhood photo of me" loadingType="eager"/>
+                <ImageBox imageUrl="/childhood-photo.webp" description="I used to look like this. Hi!" alt="Childhood photo of me" loadingType="eager"/>
             </CustomBox>
 
             <AppearingBox>
                 <p className="description">
-                    Over the past few years, I've been exploring how ideas actually turn into reality. I used to run a blog pointing out ui/ux mistakes made by technical founders, while offering actionable solutions in a digestible way. Although the blog was short-lived, it managed to inspire people to fix issues I highlighted.
+                    Over the past few years, I've been exploring how ideas actually turn into real websites. I used to run a blog pointing out ui/ux mistakes made by technical founders, while offering actionable solutions in a digestible way. Although the blog was short-lived, it managed to inspire people to fix issues I highlighted.
                     <br /><br />
-                    Even though I haven't built anything that's reached a wider audience yet, I often see my past work guiding me toward my next steps.
+                    Even though my websites haven't reached a wider audience yet, I often see my past work guiding me toward my next steps.
                 </p>
             </AppearingBox>
 
             <AppearingBox marginTop="50px" marginBottom="100px">
-                <ImageBox width={700} imageUrl="/helped-somebody.png" description="One of the founders I've inspired. :)" alt="A founder I've inspired" loadingType="lazy"/>
+                <ImageBox width={700} imageUrl="/helped-somebody.webp" description="One of the founders I've inspired. :)" alt="A founder I've inspired" loadingType="lazy"/>
             </AppearingBox>
 
             <AppearingBox marginBottom="25px">
