@@ -33,7 +33,6 @@ a {
 }
 
 .description {
-  text-align: justify;
   color: #c5c5c5;
 }
 
@@ -43,4 +42,8 @@ a {
 
 .new-section {
   padding-top: 125px;
+}
+
+.center {
+  text-align: center;
 }

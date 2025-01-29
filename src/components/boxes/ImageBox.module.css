@@ -14,7 +14,8 @@
     overflow: hidden;
     text-align: center;
     width: 100%;
-    max-width: 500px;
+    max-width: 250px;
+    max-height: 250px;
 }
 
 .image {

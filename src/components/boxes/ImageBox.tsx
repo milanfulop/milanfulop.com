@@ -3,19 +3,26 @@ import styles from './ImageBox.module.css';
 
 interface ImageBoxProps {
   imageUrl: string;
-  description: string;
+  description?: string;
   alt: string;
   width?: number;
   height?: number;
   loadingType?: "lazy" | "eager" | undefined;
+  marginTop?: string
+  marginBottom?: string;
 }
 
-export default function ImageBox({ imageUrl, alt, description, width = 350, height = 350, loadingType = "lazy" }: ImageBoxProps) {
+export default function ImageBox({ imageUrl, alt, description, width = 250, height = 250, loadingType = "lazy", marginTop, marginBottom }: ImageBoxProps) {
   return (
     <div className={styles.parentContainer}>
       <div 
         className={styles.container} 
-        style={{ width: width, maxHeight: height }}
+        style={{ 
+          width: width, 
+          maxHeight: height,
+          marginTop: marginTop,
+          marginBottom: marginBottom, 
+        }}
       >
         <Image
             quality={50} 
@@ -27,7 +34,7 @@ export default function ImageBox({ imageUrl, alt, description, width = 350, heig
             className={styles.image}
         />
       </div>
-      <p className={styles.description}>{description}</p>
+      { description == "" ? <p className={styles.description}>{description}</p> : <></>}
     </div>
   );
 }
