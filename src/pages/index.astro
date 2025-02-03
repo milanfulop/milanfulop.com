@@ -1,5 +1,5 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import Box from '../components/Box.astro';
 import Layout from '../layouts/Layout.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -7,5 +7,38 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<Welcome />
+	<Box>
+		<h1>hello</h1>
+	</Box>
 </Layout>
+
+<style is:global>
+	@font-face {
+	  font-family: 'Inter';
+	  src: url('/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+	  font-weight: 100 900;
+	  font-style: normal;
+	  font-display: swap;
+	}
+  
+	@font-face {
+	  font-family: 'Inria Serif';
+	  src: url('/InriaSerif-Regular.ttf') format('truetype');
+	  font-weight: normal;
+	  font-style: normal;
+	  font-display: swap;
+	}
+  
+	@font-face {
+	  font-family: 'Inria Serif';
+	  src: url('/InriaSerif-Bold.ttf') format('truetype');
+	  font-weight: bold;
+	  font-style: normal;
+	  font-display: swap;
+	}
+  
+	body {
+	  font-family: 'Inter', sans-serif;
+	}
+</style>
+  
