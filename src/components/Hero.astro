@@ -1,0 +1,92 @@
+---
+import Box from "./boxes/Box.astro";
+---
+<div>
+   <div class="outer-column">
+       <div class="rows">
+           <Box minWidth="650px" minHeight="200px">
+               <p>Hi!</p>
+               <h1>I'm <span>Milan Fulop</span>, a <span>full-stack developer</span> building modern websites and applications</h1>
+           </Box>
+           <div class="second-row">
+                <Box minWidth="200px" minHeight="200px">
+                    <p>About Me</p>
+                    <h1>I'm <span>Milan Professional</span></h1>
+                </Box>
+                <div class="inner-column">
+                    <Box minWidth="300px" minHeight="10px">
+                        <p>Skills</p>
+                        <h1>I'm <span>Milan</span>, a Tech Expert</h1>
+                    </Box>
+                    <Box minWidth="300px" minHeight="10px">
+                        <p>Experience</p>
+                        <h1>I'm <span>Milan</span>, a Developer</h1>
+                    </Box>
+                </div>
+            </div>
+       </div>
+       <Box minHeight="450px">
+           <p>Projects</p>
+           <h1>I'm <span>Milan Developer</span>, a <span>full-stack developer</span> building modern websites and applications</h1>
+       </Box>
+   </div>
+</div>
+
+<style>
+    p,h1{
+        margin: 0;
+    }
+    p {
+        margin-bottom: 15px;
+        color: #ABABAB
+    }
+    h1 {
+        font-weight: 200;
+    }
+    span {
+        font-family: "Inria Serif", serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+    .outer-column {
+        display: flex;
+        gap: 25px;
+    }
+    .rows {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .second-row {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+    }
+    .inner-column {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    @media (max-width: 968px) {
+        .outer-column {
+            flex-direction: column;
+        }
+        
+        .second-row {
+            flex-direction: column;
+        }
+
+        .outer-column > *,
+        .rows > *,
+        .second-row > *,
+        .inner-column > * {
+            width: 100%;
+        }
+
+        .Box {
+            min-width: 0 !important;
+            width: 100%;
+        }
+    }
+</style>

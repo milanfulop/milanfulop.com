@@ -1,7 +1,11 @@
-<div class="custom-container">
+---
+const { minWidth = "auto", minHeight = "auto" } = Astro.props;
+---
+
+<div class="custom-container" style={`--min-width: ${minWidth}; --min-height: ${minHeight};`}>
     <slot />
 </div>
-  
+
 <style>
     .custom-container {
         border-radius: 15px;
@@ -9,8 +13,10 @@
         z-index: 1;
         border: 1px solid rgba(89, 89, 89, 1);
         background-color: rgba(51, 51, 51, 0.5);
-        padding: 5px 25px;
+        padding: 25px 25px;
         backdrop-filter: blur(4px);
         -webkit-backdrop-filter: blur(4px);
+        min-width: var(--min-width);
+        min-height: var(--min-height);
     }
-</style> 
+</style>
