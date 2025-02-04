@@ -1,7 +1,7 @@
 ---
-import Box from '../components/boxes/Box.astro';
 import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
+import Work from '../components/Work.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
@@ -11,11 +11,21 @@ import Layout from '../layouts/Layout.astro';
 	<Hero />
 	<div class="spacer" />
 	<h1 class="title">Work</h1>
+	<Work />
+	<div class="spacer" />
+	a
 </Layout>
 
 <style is:global>  
+    p {
+        margin-bottom: 15px;
+        color: #ABABAB
+    }
 	body {
 	  	font-family: 'Inter', sans-serif;
+	}
+	html {
+		scroll-behavior: smooth;
 	}
 	.spacer {
 		margin-top: 100px;
@@ -24,7 +34,10 @@ import Layout from '../layouts/Layout.astro';
 		text-align: center;
 		color: white;
 	}
-
+	.body-text {
+        color: white;
+		margin-top: 0px;
+    }
 	@media (min-width: 768px) {
 		.spacer {
 			margin-top: 150px;
