@@ -20,7 +20,7 @@ import {
 <div>
    <div class="outer-column">
        <div class="rows">
-           <Box minWidth="600px" minHeight="200px">
+           <Box minWidth="400px" minHeight="200px">
                <p>Hi!</p>
                <h1>I'm <span>Milan Fulop</span>, a <span>full-stack developer</span> building modern websites and applications</h1>
                <div class="social-icons">
@@ -95,7 +95,7 @@ import {
        <Box minHeight="450px">
            <p>About</p>
            <p class="body-text">
-               I’m Milán Fülöp, a full-stack developer with 7 years of experience across game, web, mobile, and desktop app development. 
+               I’m Milán Fülöp, a full-stack developer with experience across game, web, mobile, and desktop app development. 
                <br/><br/>
                My focus is on building user-centered, effective solutions that solve real problems.
                <br/><br/>
@@ -269,6 +269,12 @@ import {
         .Box {
             min-width: 0 !important;
             width: 100%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .outer-column {
+            padding-right: 15px;
         }
     }
 </style>
