@@ -1,9 +1,9 @@
-// @ts-check
 import { defineConfig } from 'astro/config';
-
-import react from '@astrojs/react';
-
-// https://astro.build/config
+// Import /static for a static site
+import vercelStatic from '@astrojs/vercel/static';
+ 
 export default defineConfig({
-  integrations: [react()]
+  // Must be 'static' or 'hybrid'
+  output: 'static',
+  adapter: vercelStatic(),
 });
