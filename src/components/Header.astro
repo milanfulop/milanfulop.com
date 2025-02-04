@@ -24,7 +24,7 @@ const profilePicture = 'https://media.licdn.com/dms/image/v2/D4D03AQHZGkJq-h8XiA
     </div>
 
     <a href="mailto:fulopmilan170@gmail.com" class="contact-button">
-        Contact Me
+        Let's chat!
     </a>
 </div>
 
@@ -34,11 +34,11 @@ const profilePicture = 'https://media.licdn.com/dms/image/v2/D4D03AQHZGkJq-h8XiA
         top: 10px;
         left: 50%;
         transform: translateX(-50%);
-        width: 300px;
+        width: 350px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 5px 10px;
+        padding: 5px 5px;
         border: 1px solid rgba(89, 89, 89, 1);
         background-color: rgba(51, 51, 51, 0.5);
         border-radius: 50px;
@@ -53,8 +53,8 @@ const profilePicture = 'https://media.licdn.com/dms/image/v2/D4D03AQHZGkJq-h8XiA
     }
 
     .profile-pic {
-        width: 36px;
-        height: 36px;
+        width: 48px;
+        height: 48px;
         border-radius: 50%;
         object-fit: cover;
         margin-right: 15px;
@@ -68,8 +68,8 @@ const profilePicture = 'https://media.licdn.com/dms/image/v2/D4D03AQHZGkJq-h8XiA
     }
 
     .social-icon {
-        width: 25px;
-        height: 25px;
+        width: 32px;
+        height: 32px;
         opacity: 0.7;
         transition: opacity 0.3s ease;
         position: relative;
@@ -111,23 +111,24 @@ const profilePicture = 'https://media.licdn.com/dms/image/v2/D4D03AQHZGkJq-h8XiA
         text-decoration: none;
         color: black;
         background-color: #75e979;
-        padding: 10px 15px;
+        padding: 15px 15px;
         border-radius: 25px;
         font-weight: bold;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        transition: 0.15s ease;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         font-size: 0.8rem;
     }
 
     .contact-button:hover {
-        transform: scale(1.05);
-        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        transform: scale(1.02);
+        background-color: white;
+        color: #75e979;
     }
 
     @media (max-width: 768px) {
         .header {
             width: 400px;
-            padding: 8px 15px;
+            padding: 9px 10px;
         }
 
         .profile-pic {
