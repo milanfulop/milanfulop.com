@@ -1,0 +1,154 @@
+---
+import { siGithub, siMaildotru } from 'simple-icons';
+
+const profilePicture = 'https://media.licdn.com/dms/image/v2/D4D03AQHZGkJq-h8XiA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1726953589200?e=1744243200&v=beta&t=IFIWi22UoIuJXYq6JQz904upJXJzD7pCbuD8Q4yrGMw';
+---
+
+<div class="header">
+    <div class="profile-container">
+        <img src={profilePicture} alt="Profile" class="profile-pic" />
+    </div>
+    
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/milan-fulop/" target="_blank" class="social-icon" data-tooltip="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.784 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+        </a>
+        <a href="https://github.com/milanfulop" target="_blank" class="social-icon" data-tooltip="GitHub">
+            <svg viewBox="0 0 24 24"><path d={siGithub.path} fill="white" /></svg>
+        </a>
+        <a href="mailto:fulopmilan170@gmail.com" class="social-icon" data-tooltip="Email">
+            <svg viewBox="0 0 24 24"><path d={siMaildotru.path} fill="white" /></svg>
+        </a>
+    </div>
+
+    <a href="mailto:fulopmilan170@gmail.com" class="contact-button">
+        Contact Me
+    </a>
+</div>
+
+<style>
+    .header {
+        position: fixed;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 10px;
+        border: 1px solid rgba(89, 89, 89, 1);
+        background-color: rgba(51, 51, 51, 0.5);
+        border-radius: 50px;
+        z-index: 1000;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+
+    .profile-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .profile-pic {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 15px;
+    }
+
+    .social-icons {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-right: 10px;
+    }
+
+    .social-icon {
+        width: 25px;
+        height: 25px;
+        opacity: 0.7;
+        transition: opacity 0.3s ease;
+        position: relative;
+    }
+
+    .social-icon:hover {
+        opacity: 1;
+    }
+
+    .social-icon svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .social-icon::after {
+        content: attr(data-tooltip);
+        position: absolute;
+        bottom: 120%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #333;
+        color: #fff;
+        padding: 5px 8px;
+        border-radius: 4px;
+        white-space: nowrap;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.2s;
+        font-size: 12px;
+        pointer-events: none;
+    }
+
+    .social-icon:hover::after {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .contact-button {
+        text-decoration: none;
+        color: black;
+        background-color: #75e979;
+        padding: 10px 15px;
+        border-radius: 25px;
+        font-weight: bold;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        font-size: 0.8rem;
+    }
+
+    .contact-button:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    @media (max-width: 768px) {
+        .header {
+            width: 400px;
+            padding: 8px 15px;
+        }
+
+        .profile-pic {
+            width: 48px;
+            height: 48px;
+            margin-right: 20px;
+        }
+
+        .social-icon {
+            width: 32px;
+            height: 32px;
+        }
+
+        .social-icons {
+            gap: 15px;
+            margin-right: 15px;
+        }
+
+        .contact-button {
+            padding: 12px 20px;
+            font-size: 0.9rem;
+        }
+    }
+</style>
