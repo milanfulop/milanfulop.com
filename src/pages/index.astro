@@ -9,12 +9,13 @@ import Box from '../components/boxes/Box.astro'
 
 <Layout>
 	<Header />
-	<div class="top-spacer" />
+	<div class="large-spacer" />
 	<Hero />
 	<div class="spacer" />
 	<Work />
 	<div class="spacer" />
 	<Footer />
+	<div class="large-spacer" />
 </Layout>
 
 <style is:global>  
@@ -29,10 +30,10 @@ import Box from '../components/boxes/Box.astro'
 		scroll-behavior: smooth;
 	}
 	.spacer {
-		margin-top: 25px;
+		height: 25px;
 	}
-	.top-spacer {
-		margin-top: 100px
+	.large-spacer {
+		height: 100px
 	}
 	.title {
 		text-align: center;
@@ -42,12 +43,16 @@ import Box from '../components/boxes/Box.astro'
         color: white;
 		margin-top: 0px;
     }
+	.center {
+		margin: 0 auto;
+		text-align: center
+	}
 	@media (min-width: 768px) {
 		.spacer {
-			margin-top: 25px;
+			height: 25px;
 		}
-		.top-spacer {
-			margin-top: 100px
+		.large-spacer {
+			height: 100px
 		}
 	}
 </style>

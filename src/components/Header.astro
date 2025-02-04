@@ -1,5 +1,6 @@
 ---
 import { siGithub, siMaildotru } from 'simple-icons';
+import Button from './Button.astro'
 
 const profilePicture = 'https://media.licdn.com/dms/image/v2/D4D03AQHZGkJq-h8XiA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1726953589200?e=1744243200&v=beta&t=IFIWi22UoIuJXYq6JQz904upJXJzD7pCbuD8Q4yrGMw';
 ---
@@ -23,9 +24,7 @@ const profilePicture = 'https://media.licdn.com/dms/image/v2/D4D03AQHZGkJq-h8XiA
         </a>
     </div>
 
-    <a href="mailto:fulopmilan170@gmail.com" class="contact-button">
-        Let's chat!
-    </a>
+    <Button url="mailto:fulopmilan170@gmail.com" flashy={true}>Let's chat!</Button>
 </div>
 
 <style>
