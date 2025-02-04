@@ -1,0 +1,103 @@
+---
+import ContainerBox from "./boxes/ContainerBox.astro";
+import ImageBox from "./boxes/ImageBox.astro";
+import Label from "./Label.astro";
+import Button from "./Button.astro"
+
+import {
+  siGithub,
+  siYoutube,
+} from "simple-icons";
+---
+
+    <ContainerBox>
+        <h1 class="title">Projects</h1>
+        <div class="row" id="work">
+            <ImageBox minWidth="400px" imageUrl="/devroot.gif">
+                <Label>NextJS</Label><Label>ASP.NET</Label><Label>Web</Label> 
+                <p>devRoot</p>
+                <p class="body-text">Helping IT teachers and students with advanced filtering to easily find Hungarian assignments.</p>
+                <div class="social-icons">
+                    <a href="https://devroot.hu" target="_blank" class="social-icon" data-tooltip="Website">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/devRoot-workshop/devRoot-frontend" target="_blank" class="social-icon" data-tooltip="GitHub">
+                        <svg viewBox="0 0 24 24"><path d={siGithub.path} fill="white" /></svg>
+                    </a>
+                </div>
+            </ImageBox>
+
+            <ImageBox minWidth="400px" imageUrl="/kronikle.webp">
+                <Label>Flutter</Label><Label>State management</Label><Label>Desktop</Label> 
+                <p>Kronikle</p>
+                <p class="body-text">A Windows app for customizable second-brain widgets for task and notes organization and management.</p>
+                <div class="social-icons">
+                    <a href="https://github.com/milanfulop/kronikle" target="_blank" class="social-icon" data-tooltip="GitHub">
+                        <svg viewBox="0 0 24 24"><path d={siGithub.path} fill="white" /></svg>
+                    </a>
+                </div>
+            </ImageBox>
+
+            <ImageBox minWidth="400px" imageUrl="/aichatsupportplatform.gif">
+                <Label>ReactJS</Label><Label>Express</Label><Label>AI + RAG</Label><Label>Web</Label> 
+                <p>AI Chat Support Platform</p>
+                <p class="body-text">A platform that lets you config and deploy contextually customized chatbots for your websites.</p>
+                <div class="social-icons">
+                    <a href="https://www.youtube.com/watch?v=F4ViAFmRBno" target="_blank" class="social-icon" data-tooltip="GitHub">
+                        <svg viewBox="0 0 24 24"><path d={siYoutube.path} fill="white" /></svg>
+                    </a>
+                    <a href="https://github.com/milanfulop/ai-chat-support-platform" target="_blank" class="social-icon" data-tooltip="GitHub">
+                        <svg viewBox="0 0 24 24"><path d={siGithub.path} fill="white" /></svg>
+                    </a>
+                </div>
+            </ImageBox>
+        </div>
+
+        <div class="button-container">
+            <Button url="https://github.com/milanfulop?tab=repositories">See all on GitHub</Button>
+        </div>
+    </ContainerBox>
+
+<style>
+    p {
+        margin: 0px;
+        margin-top: 10px;
+    }
+    .row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+    .row > * {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .social-icons {
+        margin-top: 15px;
+        display: flex;
+        gap: 15px;
+    }
+
+    .social-icon {
+        cursor: pointer;
+        opacity: 0.7;
+        transition: opacity 0.1s ease;
+    }
+    .social-icon svg {
+        width: 25px;
+        height: 25px;
+    }
+    .social-icon:hover {
+        opacity: 1;
+    }
+    .button-container {
+        text-align: center;
+        margin: 25px auto 0px;
+    }
+</style>

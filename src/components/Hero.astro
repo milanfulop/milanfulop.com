@@ -1,0 +1,274 @@
+---
+import Box from "./boxes/Box.astro";
+import {
+  siTypescript,
+  siReact,
+  siNextdotjs,
+  siFlutter,
+  siAstro,
+  siFirebase,
+  siSupabase,
+  siPostgresql,
+  siMongodb,
+  siExpress,
+  siFigma,
+  siGithub,
+  siMaildotru
+} from "simple-icons";
+---
+
+<div>
+   <div class="outer-column">
+       <div class="rows">
+           <Box minWidth="600px" minHeight="200px">
+               <p>Hi!</p>
+               <h1>I'm <span>Milan Fulop</span>, a <span>full-stack developer</span> building modern websites and applications</h1>
+               <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/milan-fulop/" target="_blank" class="social-icon" data-tooltip="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.784 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/milanfulop" target="_blank" class="social-icon" data-tooltip="GitHub">
+                        <svg viewBox="0 0 24 24"><path d={siGithub.path} fill="white" /></svg>
+                    </a>
+                    <a href="mailto:fulopmilan170@gmail.com" class="social-icon" data-tooltip="Email">
+                        <svg viewBox="0 0 24 24"><path d={siMaildotru.path} fill="white" /></svg>
+                    </a>
+              </div>
+           </Box>
+           <div class="second-row">
+                <Box minWidth="200px" minHeight="200px">
+                    <p>Tools of choice</p>
+                    <div class="icons">
+                        <div class="tooltip" data-tooltip="TypeScript">
+                            <svg viewBox="0 0 24 24"><path d={siTypescript.path} fill="white" /></svg>
+                        </div>
+                        <div class="tooltip" data-tooltip="React">
+                            <svg viewBox="0 0 24 24"><path d={siReact.path} fill="white" /></svg>
+                        </div>
+                        <div class="tooltip" data-tooltip="Next.js">
+                            <svg viewBox="0 0 24 24"><path d={siNextdotjs.path} fill="white" /></svg>
+                        </div>
+                        <div class="tooltip" data-tooltip="Flutter">
+                            <svg viewBox="0 0 24 24"><path d={siFlutter.path} fill="white" /></svg>
+                        </div>
+                        <div class="tooltip" data-tooltip="Astro">
+                            <svg viewBox="0 0 24 24"><path d={siAstro.path} fill="white" /></svg>
+                        </div>
+                        <div class="tooltip" data-tooltip="Firebase">
+                            <svg viewBox="0 0 24 24"><path d={siFirebase.path} fill="white" /></svg>
+                        </div>
+                        <div class="tooltip" data-tooltip="Supabase">
+                            <svg viewBox="0 0 24 24"><path d={siSupabase.path} fill="white" /></svg>
+                        </div>
+                        <div class="tooltip" data-tooltip="PostgreSQL">
+                            <svg viewBox="0 0 24 24"><path d={siPostgresql.path} fill="white" /></svg>
+                        </div>
+                        <div class="tooltip" data-tooltip="MongoDB">
+                            <svg viewBox="0 0 24 24"><path d={siMongodb.path} fill="white" /></svg>
+                        </div>
+                        <div class="tooltip" data-tooltip="Express.js">
+                            <svg viewBox="0 0 24 24"><path d={siExpress.path} fill="white" /></svg>
+                        </div>
+                        <div class="tooltip" data-tooltip="Figma">
+                            <svg viewBox="0 0 24 24"><path d={siFigma.path} fill="white" /></svg>
+                        </div>
+                    </div>                 
+                </Box>
+                <div class="inner-column">
+                    <a href="#work" class="work-link">
+                        <Box minWidth="300px" minHeight="10px" class="work-box">
+                            <p>Work</p>
+                            <p class="body-text">The projects I'm proud of.</p>
+                            <span class="arrow">→</span>
+                        </Box>
+                    </a>                                      
+                    <Box minWidth="300px" minHeight="10px" class="now-box">
+                        <p>/now</p>
+                        <p class="body-text">Available for new opportunities.<br/><a href="mailto:fulopmilan170@gmail.com">Contact me</a></p>
+                        <div class="pulsing-circle"></div>
+                    </Box>
+                </div>
+            </div>
+       </div>
+       <Box minHeight="450px">
+           <p>About</p>
+           <p class="body-text">
+               I’m Milán Fülöp, a full-stack developer with 7 years of experience across game, web, mobile, and desktop app development. 
+               <br/><br/>
+               My focus is on building user-centered, effective solutions that solve real problems.
+               <br/><br/>
+               I enjoy collaborating with others to bring new ideas to life and continuously improve on what we create.
+            </p>
+        </Box>
+   </div>
+</div>
+
+<style>
+    h1 {
+        margin-bottom: 50px;
+        font-weight: 200;
+    }
+    span {
+        font-family: "Inria Serif", serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+    a {
+        color: #75e979;
+    }
+    .outer-column {
+        display: flex;
+        gap: 25px;
+    }
+    .rows {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .second-row {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+    }
+    .inner-column {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .icons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: flex-start;
+    }
+    .icons svg {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+    .tooltip {
+        position: relative;
+    }
+    .tooltip::after {
+        content: attr(data-tooltip);
+        position: absolute;
+        bottom: 120%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #333;
+        color: #fff;
+        padding: 5px 8px;
+        border-radius: 4px;
+        white-space: nowrap;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.2s;
+        font-size: 12px;
+        pointer-events: none;
+    }
+    .tooltip:hover::after {
+        opacity: 1;
+        visibility: visible;
+    }
+    .work-link {
+        text-decoration: none;
+        color: inherit;
+        display: inline-block;
+        position: relative;
+    }
+
+    .work-box {
+        position: relative;
+        padding-bottom: 25px;
+    }
+
+    .arrow {
+        position: absolute;
+        bottom: 10px;
+        right: 20px;
+        display: inline-block;
+        transition: transform 0.2s ease-in-out;
+        font-size: 18px;
+    }
+
+    .work-link:hover .arrow {
+        color: #75e979;
+        transform: translateX(5px);
+    }
+
+    .now-box {
+        position: relative;
+    }
+
+    .pulsing-circle {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        width: 15px;
+        height: 15px;
+        background-color: #75e979;
+        border-radius: 50%;
+        animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.25);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    .intro-box {
+        position: relative;
+    }
+    .social-icons {
+        position: absolute;
+        bottom: 25px;
+        left: 25px;
+        display: flex;
+        gap: 15px;
+    }
+    .social-icon {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        opacity: 0.7;
+        transition: opacity 0.3s ease;
+    }
+    .social-icon:hover {
+        opacity: 1;
+    }
+    .social-icon svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    @media (max-width: 968px) {
+        .outer-column {
+            flex-direction: column;
+        }
+        
+        .second-row {
+            flex-direction: column;
+        }
+
+        .outer-column > *,
+        .rows > *,
+        .second-row > *,
+        .inner-column > * {
+            width: 100%;
+        }
+
+        .Box {
+            min-width: 0 !important;
+            width: 100%;
+        }
+    }
+</style>

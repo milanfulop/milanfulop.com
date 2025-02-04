@@ -1,0 +1,59 @@
+---
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Work from '../components/Work.astro';
+import Layout from '../layouts/Layout.astro';
+import Footer from '../components/Footer.astro'
+
+export const prerender = true;
+---
+
+<Layout>
+	<Header />
+	<div class="large-spacer" />
+	<Hero />
+	<div class="spacer" />
+	<Work />
+	<div class="spacer" />
+	<Footer />
+	<div class="large-spacer" />
+</Layout>
+
+<style is:global>  
+    p {
+        margin-bottom: 15px;
+        color: #ABABAB
+    }
+	body {
+	  	font-family: 'Inter', sans-serif;
+	}
+	html {
+		scroll-behavior: smooth;
+	}
+	.spacer {
+		height: 25px;
+	}
+	.large-spacer {
+		height: 100px
+	}
+	.title {
+		text-align: center;
+		color: white;
+	}
+	.body-text {
+        color: white;
+		margin-top: 0px;
+    }
+	.center {
+		margin: 0 auto;
+		text-align: center
+	}
+	@media (min-width: 768px) {
+		.spacer {
+			height: 25px;
+		}
+		.large-spacer {
+			height: 100px
+		}
+	}
+</style>

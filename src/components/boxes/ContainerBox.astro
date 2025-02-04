@@ -1,0 +1,43 @@
+---
+const { minWidth = "auto", minHeight = "auto" } = Astro.props;
+---
+
+<div class="custom-container" style={`--min-width: ${minWidth}; --min-height: ${minHeight};`}>
+    <slot />
+</div>
+
+<style>
+    .custom-container {
+        border-radius: 15px;
+        color: white;
+        z-index: 1;
+        border: 1px solid rgba(89, 89, 89, 0.5);
+        background-color: #33333310;
+        padding: 25px;
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        min-width: var(--min-width);
+        min-height: var(--min-height);
+        background-image: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+        background-size: 16px 16px;
+    }
+
+    /*
+    .custom-container:hover {
+        border-color: #75e979;
+    }
+    */
+
+    @media (max-width: 768px) {
+        .custom-container {
+            min-width: 90%;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .custom-container {
+            min-height: 250px;
+            min-width: 95%;
+        }
+    }
+</style>

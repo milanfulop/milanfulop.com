@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro Basics</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,600;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="hero-background" />
+		<slot />
+	</body>
+</html>
+
+<style>
+	html,
+	body {
+		margin: 0 auto;
+		max-width: 1000px;
+		height: 100%;
+	}
+
+	body {
+		background-color: #1D1C1F;
+	}
+
+	.hero-background {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		background: 
+		repeating-linear-gradient(0deg, transparent 0px, transparent 99px, #f0f0f0 100px, #f0f0f0 101px),
+		repeating-linear-gradient(90deg, transparent 0px, transparent 99px, #f0f0f0 100px, #f0f0f0 101px);
+		background-size: 100px 100px;
+		background-position: top center;
+		height: 100%;
+		mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+		z-index: -1;
+	}
+
+	@media (max-width: 1249px) {
+		body {
+			margin-left: 25px;
+			margin-right: 25px;
+			max-width: calc(100% - 50px);
+		}
+	}
+</style>
